@@ -1,0 +1,182 @@
+
+.b
+{
+  color: white;
+  text-decoration: underline;
+}
+.fond
+{
+  z-index: 1;
+  background-color: rgb(76, 33, 33);
+  width: 90%;
+  height:80%;
+  position: fixed;
+  top: 7.7em;
+  box-shadow: 0.375em 0.375em 0.375em black;
+  overflow-y: scroll;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+.cache
+{
+  width:90%; 
+  margin:0 auto; 
+  color:white; 
+  padding:0.8em; 
+  border-radius:10px; 
+  font-size:0.85em;
+   
+}
+
+.cache div
+{
+  position: relative;
+  left: -2.5em;  
+  width:110.5%; 
+  border-radius:10px; 
+  padding:0.5em; 
+  overflow:hidden; 
+  height:3em; 
+  cursor:pointer;
+  background-color:rgb(76, 46, 46);
+}
+
+.cache div:hover, .cache div:focus
+{
+  background-color:rgb(76, 46, 46); 
+  color: rgb(255,255,255);  
+  transition:background 0.5s ease, 
+  color 0.5s ease;
+}
+.div1:active, .div1:focus 
+{
+  height:21em; 
+  transition:height 0.3s ease; 
+  z-index:3;
+}
+.div2:active, .div2:focus, .div25:active, .div25:focus
+{
+  height:13.5em; 
+  transition:height 0.3s ease; 
+  z-index:3;
+}
+.div4:active, .div4:focus, .div26:active, .div26:focus
+{
+  height:17.5em; 
+  transition:height 0.3s ease; 
+  z-index:3;
+}
+.div3:active, .div3:focus, .div5:active, .div5:focus, .div7:active , .div7:focus, .div8:active, .div8:focus, .div9:active, .div9:focus, .div12:active, .div12:focus, .div18:active, .div18:focus, .div19:active, .div19:focus, .div21:active, .div21:focus, .div22:active, .div22:focus, .div27:active, .div27:focus
+{
+  height:19em; 
+  transition:height 0.3s ease; 
+  z-index:3;
+}
+.div6:active, .div6:focus, .div13:active, .div13:focus, .div14:active, .div14:focus, .div20:active, .div20:focus, .div23:active, .div23:focus, .div24:active, .div24:focus
+{
+  height:17.5em; 
+  transition:height 0.3s ease; 
+  z-index:3;
+}
+.div10:active, .div10:focus, .div11:active, .div11:focus, .div15:active, .div15:focus, .div16:active, .div16:focus,  .div17:active, .div17:focus
+{
+  height:11.5em; 
+  transition:height 0.3s ease; 
+  z-index:3;
+}
+.cache h4
+{ 
+  text-align:left; 
+  margin:0 0 0.5em 0;
+  font-size: 20px;
+}
+.cache ul
+{
+  margin:0; 
+  list-style:none;
+  padding-left:0.4em;
+  
+  text-align: left;
+  font-size: 18px;
+}
+.raccourci 
+{
+  position: absolute;
+  top: 15.45em;
+  left: 4.5em;
+  z-index: 25;
+  background-color: rgb(45, 22, 22);
+  border-radius: 10px;
+  text-align: center;
+  width: 21.5%;
+}
+.raccourci a 
+{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.raccourci a:hover
+{
+  text-decoration: underline;
+}
+.fbis
+{
+  z-index: 2;
+  background-color: rgb(45, 22, 22);
+  left: 18.55em;
+  top: 7.75em;
+  width: 74%;
+  height:80%;
+  position: absolute;
+  border-radius: 10px;
+  overflow-y: scroll;
+  padding-bottom: 15em;
+}
+.raccourci button
+{
+  width: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  
+}
+.raccourci button:hover
+{
+  background-color: rgb(76, 46, 46);
+}
+.div2
+{
+  position: absolute;
+  top: 1em;
+}
+code
+{
+  background-color: #2f3136;
+  border-radius: 5px;
+  padding: 0.5px;
+
+}
+.tout, .utile, .modo, .config, .config_j, .eco
+{
+  background-color: rgb(45, 22, 22);
+}

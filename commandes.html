@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KaniShiel - Commandes</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/avatars/537230211713073162/a6f3900094783514d3cfcdf106dbdcb7.png">
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/537230211713073162/a6f3900094783514d3cfcdf106dbdcb7.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_kani.css">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_commande.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script>
+    function eco() {
+      var span = document.getElementById("eco");
+      var span1 = document.getElementById("utile");
+      var span2 = document.getElementById("modo");
+      var span3 = document.getElementById("config");
+      if(span.style.display == "none") {
+        span.style.display = "inline";
+        span1.style.display = "none";
+        span2.style.display= "none";
+        span3.style.display= "none";
+    }}
+    function utile() {
+      var span = document.getElementById("utile");
+      var span1 = document.getElementById("eco");
+      var span2 = document.getElementById("modo");
+      var span3 = document.getElementById("config");
+      if(span.style.display == "none") {
+        span.style.display = "inline";
+        span1.style.display= "none";
+        span2.style.display= "none";
+        span3.style.display= "none";
+      }
+    }
+    function modo() {
+      var span = document.getElementById("modo");
+      var span1 = document.getElementById("eco");
+      var span2 = document.getElementById("utile");
+      var span3 = document.getElementById("config");
+      if(span.style.display == "none") {
+        span.style.display = "inline";
+        span1.style.display= "none";
+        span2.style.display= "none";
+        span3.style.display= "none";
+      }
+    }
+    function config() {
+      var span3 = document.getElementById("modo");
+      var span1 = document.getElementById("eco");
+      var span2 = document.getElementById("utile");
+      var span = document.getElementById("config");
+      if(span.style.display == "none") {
+        span.style.display = "inline";
+        span1.style.display= "none";
+        span2.style.display= "none";
+        span3.style.display= "none";
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--menu hamburger-->
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="commandes.html">Commandes</a></li>
+                  <li><a href="regles.html">Règles</a></li>
+                  <li><a href="contact_kani.html">Contact</a></li>
+                  <li><a href="credits_kani.html">Crédits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+     <!--Retour accueil-->
+      <div class="logo_kani">
+        <a href="index.html">
+        <img src="kani.png" class="image5" height="50em" width="184em"></a>
+      </div>
+      <div class="logo">
+       <!--Lien invit bot-->
+      <div class="invit">
+        <a href="https://discordapp.com/oauth2/authorize?client_id=537230211713073162&scope=bot&permissions=-1">
+        <img src="logo_kani.png" heigth="auto" width="40em"></a>
+      </div>
+      <!--Support discord--> 
+      <div class="logo_discord">
+        <a href="https://discord.gg/6pnDcSs">
+        <img src="discord.png" class="image4" height="auto" width="60em"></a>
+      </div>
+      <!-- Twitter -->
+      <div class="logo_twitter">
+        <a href="https://twitter.com/kanishiel?s=09">
+        <img src="twitter.png" class="image3" height="auto" width="40em"></a>
+      </div>
+      </div>
+      <div class="transparent"> </div>
+    </header>
+    <section class="showcase">
+      <div class="container showcase-inner">
+        <!--Page-->
+        <div class="raccourci">
+          <ul>
+            <button class="tout"><a><h4>Tout</h4></a></button></br>
+            <button class="eco" onclick="eco()"><a><h4>Economie</h4></a></button></br>
+            <button class="utile" onclick="utile()"><a><h4>Utilitaire</h4></a></button></br>
+            <button class="modo" onclick="modo()"><a><h4>Modération</h4></a></button></br>
+            <button class="config" onclick="config()"><a><h4>Configuration</h4></a></button></br>
+            <button class="config_j"><a><h4>Configuration des jeux</h4></a></button></br>
+          </ul>
+        </div>
+        <div class="fond">
+          <div class="commande">
+            <h2>Commandes de KaniShiel</h2>
+            <p><i>Les commandes relatives aux jeux de KaniShiel sont disponibles dans <a class="b" href="regles.html">Règles</a></i></p>
+            <p> Le préfixe de KaniShiel est <strong><i>k-</i></strong> sur tous les serveurs.</p>
+            </br>
+            <div class="fbis">
+                <div class="cache">
+                  <span id="eco" style="display:none">
+				            <div class="div1" tabindex="0" >
+					            <h4>⏣ <i><code>balance</code></i> - Permet d'afficher sa monnaie</h4>
+					              <ul id="ul1">
+						              USAGE<br/>
+                          <code>k-balance</code> / <code>k-balance {@user}</code><br/>
+                          <br/>
+                          Permet d'afficher la quantité de Wolfard et d'Arcade Coins que l'on possède.<br/>
+                          Permet également d'afficher notre position dans le classement du serveur.<br/>
+                          Si l'on ajoute une mention après la commande, cela affiche la money de la personne mentionnée.<br/>
+                          <br/>
+                          EXEMPLE<br/>
+                          <code>k-balance @Magicien_ghost</code>
+					              </ul>
+				            </div>
+                    
+                    <div class="div4" tabindex="0" style="top: 1em;">
+                      <h4>⏣ <i><code>pay</code></i> - Permet de donner de l'argent à quelqu'un</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-pay {@user} (Wolfard/Arcade) {somme}</code><br/>
+                        <br/>
+                        Permet d'envoyer des Wolfards ou des Arcade Coins à n'importe qui présent sur le serveur<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-pay @Magicien_ghost Wolfard 100</code>
+                        </ul>
+                    </div>
+                  </span>
+                  <span id="utile" style="display: none;">
+                    <div class="div5" tabindex="0">
+                      <h4>⏣ <i><code>channelinfos</code></i> - Permet d'afficher les infos d'un salon</h4>
+                      <ul>
+                      USAGE<br/>
+                      <code>k-channelinfos [#salon]</code> / <code>k-ci [#salon]</code><br/>
+                      <br/>
+                      Permet l'affichage de toutes les informations relatives à un salon.<br/>
+                      Affiche les infos du salon où l'on se trouve si l'on ne nomme pas de salon en particulier<br/>
+                      <br/>
+                      EXEMPLE<br/>
+                      <code>k-channelinfos #général</code>
+                      </ul>
+                    </div>
+                    <div class="div6" tabindex="0" style="top: 1em">
+                      <h4>⏣ <i><code>emojiinfos</code></i> - Permet d'afficher les infos d'un emoji</h4>
+                      <ul>
+                      USAGE<br/>
+                      <code>k-emojiinfos {emoji}</code> / <code>k-ei {emoji}</code><br/>
+                      <br/>
+                      Permet l'affichage de toutes les informations relatives à un emoji.<br/>
+                      <br/>
+                      EXEMPLE<br/>
+                      <code>k-emojiinfos &#128077</code>
+                      </ul>
+                    </div>
+                    <div class="div7" tabindex="0" style="top: 2em">
+                      <h4>⏣ <i><code>gamelist</code></i> - Permet d'afficher les parties en cours avec KaniShiel</h4>
+                      <ul>
+                      USAGE<br/>
+                      <code>k-gamelist (werewolf/monopoly/millebornes)</code><br/>
+                      <br/>
+                      Permet l'affichage des parties en cours avec KaniShiel.<br/>
+                      Affiche également un lien d'ivitation vers les serveurs publics.<br/>
+                      <br/>
+                      EXEMPLE<br/>
+                      <code>k-gamelist werewolf</code>
+                      </ul>
+                    </div>
+                    <div class="div8" tabindex="0" style="top: 3em">
+                      <h4>⏣ <i><code>help</code></i> - Permet d'afficher le panel d'aide</h4>
+                      <ul>
+                      USAGE<br/>
+                      <code>k-help [commande]</code> / <code>k-h [commande]</code><br/>
+                      <br/>
+                      Permet l'affichage de toutes les commandes disponibles<br/>
+                      Si l'on ajoute une commande après, cela affiche le fonctionnement de cette commande.<br/>
+                      <br/>
+                      EXEMPLE<br/>
+                      <code>k-help pay</code>
+                      </ul>
+                    </div>
+                    <div class="div9" tabindex="0" style="top: 4em">
+                      <h4>⏣ <i><code>invite</code></i> - Permet d'accéder aux liens du bot</h4>
+                      <ul>
+                      USAGE<br/>
+                      <code>k-invite</code> / <code>k-support</code><br/>
+                      <br/>
+                      Permet l'affichage en message privé du lien d'invitation de KaniShiel.<br/>
+                      Permet également l'affichage du lien d'invitation du serveur de support.<br/>
+                      <br/>
+                      EXEMPLE<br/>
+                      <code>k-invite</code>
+                      </ul>
+                    </div>
+                    <div class="div3" tabindex="0" style="top: 5em;">
+                      <h4>⏣ <i><code>top</code></i> - Permet d'afficher les classements disponibles</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-top (wolfard/arcade/level)</code>/ <code>k-leaderboard (wolfard/arcade/level)</code> <br/>
+                        <br/>
+                        Permet d'afficher les personnes ayant le plus d'Arcade Coins sur le serveur.<br/>
+                        Ainsi que votre position si vous n'êtes pas dans le top 10.<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-top arcade</code>
+                        </ul>
+                    </div>
+                    <div class="div10" tabindex="0" style="top: 6em;">
+                      <h4>⏣ <i><code>ping</code></i> - Permet d'afficher la latence du bot</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-ping</code><br/>
+                        <br/>
+                        Permet d'afficher la vitesse de réponse de KaniShiel en ms.
+                        <br/>
+                        </ul>
+                    </div>  
+                    <div class="div11" tabindex="0" style="top: 7em;">
+                      <h4>⏣ <i><code>premium</code></i> - Permet d'afficher les infos du Premium</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-premium</code> / <code>k-prem</code><br/>
+                        <br/>
+                        Permet d'afficher toutes les informations relatives au premium.
+                        <br/>
+                        </ul>
+                    </div>
+                     <div class="div12" tabindex="0" style="top: 8em;">
+                      <h4>⏣ <i><code>rank</code></i> - Permet d'afficher son niveau et sa position sur le serveur</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-rank [@user]</code>/ <code>k-level [@user]</code> <br/>
+                        <br/>
+                        Permet d'afficher son niveau ainsi que sa position sur le serveur actuel<br/>
+                        Accompagnée d'une mention, elle permet de voir le niveau de quelqu'un d'autre.<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-rank @Magicien_ghost</code>
+                        </ul>
+                    </div>
+                    <div class="div13" tabindex="0" style="top: 9em;">
+                      <h4>⏣ <i><code>roleinfos</code></i> - Permet d'afficher les infos d'un rôle</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-roleinfos {@role}</code> / <code>k-ri {@role}</code> <br/>
+                        <br/>
+                        Permet d'afficher les informations relatives au rôle mentionné.<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-roleinfos @Develloper Web</code>
+                        </ul>
+                    </div>
+                    <div class="div14" tabindex="0" style="top: 10em;">
+                      <h4>⏣ <i><code>serverinfos</code></i> - Permet d'afficher les infos du serveur</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-roleinfos</code> / <code>k-si</code> <br/>
+                        <br/>
+                        Permet d'afficher les informations relatives au serveur sur lequel l'on se trouve.<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-si</code>
+                        </ul>
+                    </div> 
+                    <div class="div15" tabindex="0" style="top: 11em;">
+                      <h4>⏣ <i><code>shard</code></i> - Permet d'afficher la shard sur laquelle le serveur se trouve</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-shard</code><br/>
+                        <br/>
+                        Permet d'afficher la shard sur laquelle le serveur où l'on se trouve, est.<br/>
+                        </ul>
+                    </div>
+                    <div class="div16" tabindex="0" style="top: 12em;">
+                      <h4>⏣ <i><code>staff</code></i> - Permet d'afficher la liste du Staff</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-staff</code><br/>
+                        <br/>
+                        Permet d'afficher la liste du Staff du support de KaniShiel ainsi que leur ou non présence.<br/>
+                        </ul>
+                    </div>         
+                    <div class="div17" tabindex="0" style="top: 13em;">
+                      <h4>⏣ <i><code>stats</code></i> - Permet d'afficher les statistiques du Bot</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-stats</code> / <code>k-botinfos</code><br/>
+                        <br/>
+                        Permet d'afficher les statistiques de KaniShiel.<br/>
+                        </ul>
+                    </div> 
+                    <div class="div18" tabindex="0" style="top: 14em;">
+                      <h4>⏣ <i><code>suggest</code></i> - Envoie une suggestion</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-suggest {suggestion}</code><br/>
+                        <br/>
+                        Permet de suggérer une idée pour améliorer Kani ou les jeux qu'il propose.<br/>
+                        /!\ Les messages envoyés font sur le serveur de support, tout troll sera puni /!\<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-suggest Voici mon idée pour améliorer le bot...</code>
+                        </ul>
+                    </div> 
+                    <div class="div19" tabindex="0" style="top: 15em;">
+                      <h4>⏣ <i><code>useredit</code></i> - Permet de modifier son profil</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-useredit colortext {color-hex}</code> / Réservé premium <code>k-useredit (title/background)</code><br/>
+                        <br/>
+                        Permet de modifier la couleur d'écriture de son profil.<br/>
+                        Réservé premium: permet de modifier notre descritpion ainsi que la photo à l'arrière plan.<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-useredit colortext #FF0000</code>
+                        </ul>
+                    </div>
+                    <div class="div20" tabindex="0" style="top: 16em;">
+                      <h4>⏣ <i><code>userinfo</code></i> - Permet de voir son profil</h4>
+                        <ul>
+                        USAGE<br/>
+                        <code>k-userinfo [@mention]</code> / <code>k-ui [@mention]</code><br/>
+                        <br/>
+                        Permet de voir son profil ou celui d'une autre personne.<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-userinfo @Magicien_ghost</code>
+                        </ul>
+                    </div>             
+                  </span>
+                  <span id="modo" style="display: none;">
+                    <div class="div21" tabindex="0">
+                      <h4>⏣ <i><code>gameban</code></i> - Permet de bannir un membre de l'utilisation de KaniShiel</h4>
+                      <ul>
+                        USAGE<br/>
+                        <code>k-gameban {@mention} (game/all) [t-temps] [r-raison]</code><br/>
+                        <br/>
+                        Permet d'interdire l'utilisation de KaniShiel à un joueur.<br/>
+                        Il ne pourra plus intéragir avec Kani.<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-gameban @Magicien_ghost werewolf t-3w r-ban</code>
+                      </ul>
+                    </div>
+                    <div class="div22" tabindex="0" style="top: 1em;">
+                      <h4>⏣ <i><code>gameunban</code></i> - Permet de débannir un membre de l'utilisation de KaniShiel</h4>
+                      <ul>
+                        USAGE<br/>
+                        <code>k-gameunban {@mention} (game/all) [r-raison]</code><br/ >
+                        <br/>
+                        Permet d'autoriser de nouveau l'accès à un joueur banni.<br/>
+                        Il pourra de nouveau intéragir avec Kani.<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-gameunban @Magicien_ghost werewolf r-ban</code>
+                      </ul>
+                    </div>
+                    <div class="div23" tabindex="0" style="top: 2em;">
+                      <h4>⏣ <i><code>mentionrole</code></i> - Permet de mentionner un rôle</h4>
+                      <ul>
+                        USAGE<br/>
+                        <code>k-mentionrole {@role}</code><br/>
+                        <br/>
+                        Permet de mentionner un rôle quine peut normalement pas être mentionné.<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-mentionrole @Develloper Web</code>
+                      </ul>
+                    </div>
+                    <div class="div24" tabindex="0" style="top: 3em;">
+                      <h4>⏣ <i><code>reset</code></i> - Permet de reset différentes données de Kani</h4>
+                      <ul>
+                        USAGE<br/>
+                        <code>k-reset(arcade/level/stats/wolfard) </code><br/>
+                        <br/>
+                        Permet de rénitialiser certaines données de Kani.<br/>
+                        <br/>
+                        EXEMPLE<br/>
+                        <code>k-resetarcade</code>
+                      </ul>
+                    </div>
+                  </span>
+                  <span id="config" style="display: none;">
+                    <div class="div24" tabindex="0">
+                      <h4>⏣ <i><code>config</code></i> - Permet d'afficher la configuration du serveur</h4>
+                      <ul>
+                      USAGE<br/>
+                      <code>k-config</code><br/>
+                      <br/>
+                      Permet d'afficher toutes les informations relatives à la configuration de KaniSHiel sur le serveur sur lequel on se trouve.<br/>
+                      </ul>
+                    </div>
+                    <div class="div25" tabindex="0" style="top: 1em;">
+                      <h4>⏣ <i><code>custom-command</code></i> - Permet d'accéder au menu des commandes personnalisées</h4>
+                      <ul>
+                      USAGE<br/>
+                      <code>k-custom-commad</code> / <code>k-cc</code><br/>
+                      <br/>
+                      Permet d'accéder au menu permettant de créer, de modifier, de supprimer, de voir des commandes personnalisées.<br/>
+                      </ul>
+                    </div>
+                    <div class="div26" tabindex="0" style="top: 2em;">
+                      <h4>⏣ <i><code>setchannellvup</code></i> - Permet de définir le salon des levels</h4>
+                      <ul>
+                      USAGE<br/>
+                      <code>k-setchannellvup {#salon}</code><br/>
+                      <br/>
+                      Permet de modifier le salon où apparaissent les messages des levelup.<br/>
+                      <br/>
+                      EXEMPLE<br/>
+                      <code>k-setchannellvup #levels</code>
+                      </ul>
+                    </div>
+                    <div class="div27" tabindex="0" style="top: 3em;">
+                      <h4>⏣ <i><code>setlang</code></i> - Permet de définir la langue du Bot</h4>
+                      <ul>
+                      USAGE<br/>
+                      <code>k-setlang (fr/eng)</code><br/>
+                      <br/>
+                      Permet de définir la langue du bot.<br/>
+                      La langue des jeux sera ainsi modifiée.<br/>
+                      <br/>
+                      EXEMPLE<br/>
+                      <code>k-setlang fr</code>
+                      </ul>
+                    </div>
+                    <div class="div27" tabindex="0" style="top: 4em;">
+                      <h4>⏣ <i><code>setlevel</code></i> - Permet d'activer ou non les levels</h4>
+                      <ul>
+                      USAGE<br/>
+                      <code>k-setlevel (on/off)</code><br/>
+                      <br/>
+                      Permet d'activer ou de désactiver le système de niveau sur le serveur sur lequel on se trouve.<br/>
+                      <br/>
+                      EXEMPLE<br/>
+                      <code>k-setlevel on</code>
+                      </ul>
+                    </div>
+                  </span>
+			          </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

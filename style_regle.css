@@ -1,0 +1,137 @@
+.intro
+{
+  position: absolute;
+  top: 0em;
+  z-index: 2;
+  left: 2.5%;
+  width: 95%;
+  height: 31.25em;
+  text-align: center;
+}
+.contenu
+{
+  position: absolute;
+  top: 15em;
+  left: 2.5%;
+  z-index: 2;
+  width: 95%;
+  height: 31.25em;
+  
+}
+.marge
+{
+  margin-left: 2em;
+}
+.raccourci
+{
+  text-decoration: none;
+  color: white;
+  font-size: 1.25em;
+}
+button
+{
+  z-index: 5;
+  background-color: rgb(76, 33, 33);
+  border-radius: 0.3125em;
+  
+}
+
+
+.boutonmenuprincipal {
+background-color: rgb(76,46,46);
+color: white;
+border: none;
+cursor: pointer;
+padding: 0.4375em ;
+margin-top:1.25em;
+font-size: 1.25em;
+width: 8.8em;
+
+}
+.boutonmenuprincipal:hover {
+background-color: rgb(76,46,46);
+}
+.dropdown {
+position: fixed;
+display: inline-block;
+z-index: 1000;
+top: 3em;
+left:-1%;
+}
+.dropdown-child {
+display: none;
+background-color: rgb(76,46,46);
+min-width: 3.125em;
+}
+.dropdown-child a {
+color: white;
+text-decoration: none;
+display: block;
+}
+.dropdown:hover .dropdown-child {
+display: block;
+}
+.tiret
+{
+  padding: 0;
+}
+.raccourci
+{
+  padding: 0.3125em;
+}
+.img_jeu
+{
+  box-shadow: 0.375em 0.375em 0.375em black; 
+  float: right;
+}
+.img_jeu2
+{
+  box-shadow: 0.375em 0.375em 0.375em black;
+  float: left;
+  
+}
+.left
+{
+  text-align: left;
+  
+}
+.center
+{
+  text-align: center;
+}
+.rigth
+{
+  text-align: right;
+}
+.fond
+{
+  z-index: 1;
+  background-color: rgb(76, 33, 33);
+  width: 90%;
+  height:80%;
+  position: fixed;
+  top: 7em;
+  box-shadow: 0.375em 0.375em 0.375em black;
+  overflow-y: scroll;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}

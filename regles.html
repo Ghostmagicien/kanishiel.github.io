@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_kani.css">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_regle.css">
+    <title>KaniShiel - Règles</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.discordapp.com/avatars/537230211713073162/a6f3900094783514d3cfcdf106dbdcb7.png">
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/537230211713073162/a6f3900094783514d3cfcdf106dbdcb7.png">
+  </head>
+  <body>
+    <header>
+      <!--menu hamburger-->
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="commandes.html">Commandes</a></li>
+                  <li><a href="regles.html">Règles</a></li>
+                  <li><a href="contact_kani.html">Contact</a></li>
+                  <li><a href="credits_kani.html">Crédits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!--Retour accueil-->
+      <div class="logo_kani">
+        <a href="index.html">
+        <img src="kani.png" class="image5" height="50em" width="184em"></a>
+      </div>
+      <div class="logo">
+      <!--Lien invit bot-->
+      <div class="invit">
+        <a href="https://discordapp.com/oauth2/authorize?client_id=537230211713073162&scope=bot&permissions=-1">
+        <img src="logo_kani.png" heigth="auto" width="40em"></a>
+      </div>
+      <!--Support discord--> 
+      <div class="logo_discord">
+        <a href="https://discord.gg/6pnDcSs">
+        <img src="discord.png" class="image4" height="auto" width="60em"></a>
+      </div>
+      <!-- Twitter -->
+      <div class="logo_twitter">
+        <a href="https://twitter.com/kanishiel?s=09">
+        <img src="twitter.png" class="image3" height="auto" width="40em"></a>
+      </div>
+      </div>
+      <div class="transparent"> </div>
+    </header>
+    <section class="showcase"> 
+      <div class="container showcase-inner">
+        <div class="transparentbis"></div>
+          <div class="fond">
+            <div class='intro'>
+              </br>
+              </br>
+              <h2 style="text-decoration: underline;">Règles des jeux proposés par Kani</h2>
+              <p>Kani propose actuellement 3 grands jeux et 4 mini-jeux</p>
+              </br>
+              <p>Indications:</p>
+              <p>(Choix1/Choix2)</p>
+              <p>[optionel]</p>
+              <p>{obligatoire}</p>
+            </div>
+            <div class="dropdown">
+              <button class="boutonmenuprincipal">Raccourcis</button>
+              <div class="dropdown-child">
+                <p class="tiret">▬▬▬▬▬▬</p>
+                <a class="raccourci" href="#lg">Loup-garou</a>
+                <a class="raccourci"href="#monopoly">Monopoly</a>
+                <a class="raccourci"href="#mille">Mille bornes</a>
+                <a class="raccourci"href="#secret">Secret d'Hitler</a>
+                <a class="raccourci"href="#mini">Mini-jeux</a>
+              </div>
+            </div>
+            <div class='contenu'>
+              <div class="gros_jeux">
+                </br>
+                </br>
+                <!--LOUP-GAROU-->
+                <p class="center">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</p>
+                </br>      
+                <div id="lg"></div>
+                <h3><i>|| <u>Loup-garou</u> ||</i></h3>
+                </br>
+                <p class="center">Pour débuter, nous allons créer une partie:</br>
+                <span class="center" style="font-family: 'Courier New', Courier,    monospace">k-lg create (classic/fun)</span></br>
+                <span class="center" style="font-family: monospace;"><span    class="marge">classic = compo: normale, statistiques: on, gain: on; join:   tous</span></span></br>
+                <span class="marge">fun = compo: normale, statistiques: off, gain: on, join:    tous</span></p>
+                </br>
+                <p class="center">ou</p>
+                </br>
+                <p><span class="center" style="font-family: 'Courier New', Courier,     monospace">k-lg create loto {coût d'entrée}</span></br>
+                <span class="center" style="font-family: monospace;"><span    class="marge">loto = compo: loto, statistiques: on, gain: égal à la somme   jouée; join: tous</span></span></p>
+                </br>
+                <p class="center">ou</p>
+                </br>
+                <p><span class="center" style="font-family: 'Courier New', Courier,     monospace">k-lg create private ({role}/ND) ({level}/ND)</span></br>
+                <span class="center" style="font-family: monospace;"><span    class="marge">privé = compo: normale, statistiques: on, gain: on; join:   seulement role/level sélectionné</span></span></p>
+                </br>
+                <p class="center"><u>Nous allons maintenant étudier le panel de partie:</u></   p>
+                </br>
+                <p class="left"><u>Entrer dans la partie ou sortir de la partie :</u></br>
+                Utilisez la réaction &#128077, la première fois pour entrer</br> la deuxième    pour sortir, ou alors la commande:<img class="img_jeu" src="1.png"></br>    <span style="font-family: 'Courier New', Courier, monospace">k-loupgarou   join [mention]</span> pour rentrer </br>Et la commande: <span    style="font-family: 'Courier New', Courier, monospace">k-loupgarou kick   [mention]</span> pour sortir.</br>
+                </br>
+                <u>Démarrer la partie :</u></br>
+                Utilisez la réaction &#x2705 ou alors la commande: </br><span     style="font-family: 'Courier New', Courier, monospace">k-loupgarou start</    span></br>
+                </br>
+                <u>Détruire la partie :</u></br>
+                Utilisez la réaction 	&#10060 ou alors la commande:</br> <span    style="font-family: 'Courier New', Courier, monospace">k-loupgarou remove</   span></p>
+                </br>
+                <p class="center"><u>Activer le kick-offline:</u></br> Dès que quelqu'un    passera hors ligne, il sera automatiquement éjecté de la partie: </br>
+                Utilisez la réaction &#9201 </br>
+                </br>
+                <u>Activer le mode spectateur:</u></br> Pendant la partie, des gens     extérieurs à la partie pourront voir le salon village:</br> 
+                Utilisez la réaction &#128064 </br>
+                </br>
+                <u>Activer le mode vocal:</u> </br>Des salons vocaux se créeront et pendant     la nuit tout le monde sera mute: </br>
+                Utilisez la réaction &#128266 </br>
+                </br>
+                <u>Activer le maire:</u></br>
+                Utilisez la réaction &#11088</br>
+                </br>
+                <u>Démarrage automatique:</u></br>Pour démarrer automatiquement la partie     dès que le nombre de participant souhaité est atteint, utilisez la    commande:</br>
+                <span style="font-family: 'Courier New', Courier, monospace">k-autostart    {nombre de joueur}</span></p>
+                </br>
+                <p class="rigth"><img style="height:18.75em; width:18.75em;"    class="img_jeu2" src="2.png"><u>Composition:</u></br>Vous pouvez bien sûr   ajouter une composition. Ce n'est pas </br>obligatoire car si vous n'en    mettez pas ou si elle est </br>erronée Kani en mettra une pré-définie.
+                </br>Pour ouvrir le panneau de composition faites:</br>
+                <span style="font-family: 'Courier New', Courier, monospace">k-compo</span></   br>
+                Pour la modifier, faites:</br>
+                <span style="font-family: 'Courier New', Courier, monospace">k-c edit [id]    {nombre}</span></br>
+                L'id est le nombre devant le rôle choisit et le nombre </br>est le nombre de    rôle que vous souhaitez (par défaut, 1).</p>
+                </br>
+                </br>
+                </br>
+                <p class="left"><img class="img_jeu" src="3.png">Maintenant partons en    partie, vous recevrez votre rôle en message privé :</br>
+                La structure du message est la suivante :</br>
+                ⏣ Votre rôle</br>
+                ⏣ La description de celui-ci</br>
+                ⏣ Le serveur où se déroule la partie et le lien vers le salon village</br>
+                </p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="4.png">KaniShiel a crée les     salons de la partie tout en bas du serveur.</br>
+                Mon rôle dans cette partie étant sorcière je n'ai accès</br> qu'au salon de     mon rôle.
+                  La partie commence directement par une nuit:</br>
+                  ⏣ Le salon village est bloqué, vous ne pouvez pas y écrire</br>
+                  ⏣ Votre salon est accessible et des votes s'y déroulent pour choisir votre action.</p>
+                  </br>
+                <p class="center">Alors étudions les exemples ci-dessous:</p>
+                </br>
+                <p class="left"><img class="img_jeu" src="5.png"></br></br>Premier vote (Les    loups-garous): Vous avez les pseudonymes qui sont reliés à une lettre et en   réagissant avec la lettre correspondante vous mettez donc un vote sur    celui-ci. En dessous, vous avez le temps qu'il vous reste (Truc à savoir :    quand tout les loups ont voté, le timer passe immédiatement à 9 secondes   restantes).</p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="6.png">Deuxième vote (La    sorcière): Deux listes de pseudonymes apparaitront : Ceux qui sont morts    durant la nuit et ceux qui sont</br> vivant, comme pour le premier, il y a   association</br> d'un pseudo à une lettre mais pour différencier les     vivants</br> et les morts, ces derniers sont associés à un chiffre.</br>    Vous n'avez qu'une action, ressusciter ou tuer quelqu'un.</p>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="left"><img class="img_jeu" src="7.png"></br></br></br><em>Le jour     1 commence.</em></p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="8.png"></br></br></br></br></   br>Selon les réglages de temps de vote, le vote arrivera.</p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="center"><u>Fin de partie:</u></p>
+                </br>
+                <p class="left"><img class="img_jeu" src="9.png">Le nom de la personne    décédée ainsi</br> que son rôle sont dévoilés.</p>
+                </br>
+                </br>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="10.png"></br></br></br>Dès que    la partie est finie, le clan qui a gagné est affiché </br>(cela s'affiche   aussi en cas d'égalité) et un récapitulatif des rôles,</br> des morts, des     infections et autres apparaissent !</p>
+                </br>
+                </br>
+                </br>
+
+                </br>
+                </br>
+                </br>
+
+                <p class="center">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</p>
+                </br>
+                <div id="monopoly"></div>
+                <!--Monopoly-->
+                <h3><i>|| <u>Monopoly</u> ||</i></h3>
+                </br>
+                <p class="center"> Pour débuter, nous allons créer une partie:</br>
+                <span style="font-family: 'Courier New', Courier, monospace">k-monopoly     create</span></p>
+                </br>
+                <p class="left"><img class="img_jeu" src="12.png">Le bot vous confirme que    la partie a été créée avec le salon</br> où il faut aller pour la   rejoindre:</p>
+                </br>
+                </br>
+                </br>
+                <p class="center"><u>Description du lancement:</u></p>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="13.png">Le lancement d'une    partie de Monopoly ne possède pas</br> d'options contrairement à celui d'une    partie de Loup-Garou.</br>
+                <u>Pour rejoindre la partie ou la quittez:</u></br>
+                Utilisez la réaction: &#128077</br>
+                <u>Démarrer la partie:</u></br>
+                Utilisez la réaction: &#x2705 ou faites la commande: </br><span     style="font-family: 'Courier New', Courier, monospace">k-monopoly start</   span></br>
+                <u>Pour détruire la partie:</u></br>
+                Utilisez la réaction: &#10060 ou faites la commmande:</br><span     style="font-family: 'Courier New', Courier, monospace">k-monopoly remove</    span></p>
+                </br>
+                </br>
+                </br>
+                <p class="left"><img class="img_jeu" src="14.jpg"></br></br></br></br>Une     fois la partie lancée, le bot crée les salons nécessaires.</p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="center"><u>Description des salons:</u></p>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="15.jpg">⏣<u> Chat</u></br>
+                Le salon Chat est le salon principal où la majeur partie du jeu va se     dérouler.</br> A chaque tour, le bot va poster ce message.</br>
+                Pour chaque tour, les emojis servent aux mêmes choses:</br>
+                Le &#x2705 sert à passer son tour ou à payer les autres joueurs ou les taxes.   </br>
+                Le &#128722 sert à acheter le terrain sur lequel l'on se trouve si cela est     possible. </br>
+                Le &#128314 permet d'améliorer au niveau supérieur sa propriété</br>    uniquement si l'on se trouve dessus. </br>
+                La &#9760 permet d'abondonner la partie.</p>
+                </br>
+                </br>
+                </br>
+                <p class="left"><img class="img_jeu" src="16.jpg"></br></br></br></br> ⏣    <u>Board</u></br>
+                Le salon Board est comme son nom l'indique le plateau du jeu.</br>
+                Il s'actualise à chaque tour.</p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="17.jpg"></br></br></br>⏣    <u>Salon Joueur</u></br>
+                Chaque joueur a son salon qui lui est dédié. Dans ce salon est inscrit la     liste de vos biens.</p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="center">⏣ <u>Self-mortgage-refund</u></br>
+                Ce salon permet la vente, la mise en hypothèque</br> ainsi que le     remboursment d'une hypothèque.</br>
+                - Vente: imaginons la vente de la rue des du Loup si-dessus</br> La commande    pour la vente est la suivante:</br>
+                <span style="font-family: 'Courier New', Courier, monospace">-sell @user    bien prix</span></br>
+                Le <i>@user</i> doit être remplacé par la personne à qui l'on veut vendre.</    br> 
+                Le <i>bien</i> doit être remplacé par la position du bien (3 pour la rue du     Loup).</br>
+                Le <i>prix</i> doit être remplacé par la valeur du bien (60 pour la rue du    Loup).</br>
+                La commande finale donne: </br>
+                <span style="font-family: 'Courier New', Courier, monospace">-sell    @Okudas#0000 3 60</span></p>
+                </br>
+                </br>
+                <p class="left"><img class="img_jeu" src="18.jpg"></br></br>Le bot répond     avec le message ci-contre.</br>Une fois la vente validée par l'autre joueur,    le bot confirme la vente.</p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="19.jpg"></br> - Hypothèque:     Permet d'obtenir un prêt de la</br> moitié de la valeur du bien.</br> Il    faut rembourser ce bien. Mais vous ne gagnerez pas</br> d'argent si   quelqu'un tombe dessus.</br>
+                Pour rembourser un prêt, il suffit d'utiliser la commande:</br>
+                <span style="font-family: 'Courier New', Courier, monospace">-refund bien</   span></br>Il suffit de remplacer <i>bien</i> par la position (3 pour la rue   du Loup).</p>
+                </br>
+                </br>
+                <p class="center"><u>Fin de partie:</u></p>
+                </br>
+                </br>
+                <p class="left"><img class="img_jeu" src="20.png">La partie s'arrête lorsque    tous les joueurs ont abandonné ou lorsque les joueurs ne réagissent plus au   bout d'un certain temps.</p>
+                </br>              
+                  </br>
+                <p class="center">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</p>
+                  </br>
+                <div id="mille"></div>
+                <!-- Mille bornes -->
+                <h3><i>|| <u>Mille Bornes</u> ||</i></h3>
+                </br>
+                <p class="center">Pour débuter, nous allons créer une partie:</br><span     style="font-family: 'Courier New', Courier, monospace">k-millebornes create</   span></p>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="22.png"></br></br>Le bot envoie     le panel de partie ci-contre dans</br> le salon configuré pour.</br> Le     panel de partie est exactement le même</br> que celui du Monopoly.</p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="center">Dès que la partie est lancée, Kani crée les salons pour le    jeu</p>
+                </br>
+                <p class="left"><img class="img_jeu" src="23.png"><u>Description des    salons:</u></br>
+                ⏣<u>Chat</u></br>
+                C'est l'endroit où vous pouvez discuter avec vos adversaires et là où     apparait un récapitulatif des actions passées.</br>
+                </br>
+                ⏣<u>Board</u></br>
+                Comme pour le Monopoly, il s'agit du plateau du jeu.</p>
+                </br>
+                <p class="center">⏣<u>Salons personnels</u></br>
+                Les salons où apparaissent les cartes de chacun et là où chacun choisit les     actions qu'il exécute. </p>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="26.png"></br></br><u>Les cartes     kilométrées, "Contre" et les Bonus Spéciaux :</u></br>
+                Pour les utiliser, utilisez simplement la réaction liée à l'action souhaitée.   </br>
+                <u>Les cartes "Malus":</u></br>
+                Réagissez avec la réaction correspondant à la carte puis un panel apparaîtra    pour que vous choisissiez sur qui l'utiliser.</br>
+                Une confirmation apparaîtra par la suite.</p>
+                </br> 
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="left"><img class="img_jeu" src="27.png"></br></br>Dans le salon     Chat apparait le message ci-contre. </p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="28.png">Le message ci-contre    apparaît dans le salon du</br> joueur concerné.</p>
+                </br>
+                <p class="center"><u>Se débarraser d'une carte:</u></p>
+                </br>
+                <p class="left"><img class="img_jeu" src="29.png">Si une carte ne peut être     utilisée, vous pouvez vous en débarrasser.</p>
+                <p class="center">Vous devez choisir laquelle jeter.</p>
+                </br>
+                <p class="center"><u>Fin de partie:</u></p>
+                </br>
+                <p class="rigth"><img class="img_jeu2" src="30.png">La partie se finit dès    qu'il ne reste plus qu'un seul joueur à ne pas être arrivé.</br>
+                Ce message apparait alors dans Chat.</p>
+                </br>
+                <p class="center">▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</p>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
+              </div>
+              <div class="mini-jeux">
+                <h3 style="text-decoration: underline;">Les mini-jeux</h3>
+              </div>
+            </div>
+        </div>     
+      </div>
+    </section>
+  </body>
+</html>

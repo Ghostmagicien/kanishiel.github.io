@@ -1,0 +1,127 @@
+.credit
+{
+  position: absolute;
+  left: 4em;
+  top: 9em;
+  z-index: 2;
+  width: 62.5em;
+  height: 35em;
+  text-align: center;
+  font-size: 1.125em;
+  padding: 0;
+  display: inline-block;
+  background-color: rgb(76, 33, 33);
+  box-shadow: 6px 6px 6px black;
+}
+.img 
+{
+  float: left;
+  height: auto;
+  width: 6.25em;
+  border: 0.3125em solid white;
+  border-radius: 3.125em;
+}
+.a
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+  top: 4em;
+  left: 0.5em;
+}
+.b
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+  left: 21.8em;
+  top: 4em; 
+}
+.c
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+  left: 43.1em;
+  top: 4em;
+  
+}
+.d
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+  top: 12em;
+  left: 0.5em;
+}
+.e
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+  top: 12em;
+  left:21.8em;
+}
+.f
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+  top:12em;
+  left: 43.1em;
+}
+.g
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+  top: 20em;
+  left: 0.5em;
+}
+.h
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+  top: 20em;
+  left: 21.8em;
+}
+.i
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+   top: 20em;
+  left: 43.1em;
+}
+.j
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+   top: 28em;
+  left: 0.5em;
+}
+.k
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+   top: 28em;
+  left: 21.8em;
+}
+.l
+{
+  background-color: rgb(76, 46, 46);
+  position: absolute;
+  width: 18.75em;
+   top: 28em;
+  left: 43.1em;
+}
+h2
+{
+  position: center;
+  padding: 0.625em;
+  z-index: 2;
+  
+}
